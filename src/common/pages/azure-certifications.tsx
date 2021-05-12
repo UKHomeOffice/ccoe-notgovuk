@@ -3,8 +3,8 @@ import { PageProps } from "@not-govuk/app-composer";
 
 const Page: FC<PageProps> = (props) => (
   <Fragment>
-    <h4 className="app-subnav__theme">AWS training</h4>
-    <nav className="not-govuk-navigation-menu">
+    <nav className="not-govuk-navigation-menu govuk-grid-column-one-quarter">
+      <h4 className="app-subnav__theme">AWS training</h4>
       <ul className="not-govuk-navigation-menu__list">
         <li className="not-govuk-navigation-menu__list__item">
           <a
@@ -34,10 +34,7 @@ const Page: FC<PageProps> = (props) => (
           </a>
         </li>
       </ul>
-    </nav>
-
-    <h4 className="app-subnav__theme">Azure training</h4>
-    <nav className="not-govuk-navigation-menu">
+      <h4 className="app-subnav__theme">Azure training</h4>
       <ul className="not-govuk-navigation-menu__list">
         <li className="not-govuk-navigation-menu__list__item">
           <a
@@ -78,38 +75,153 @@ const Page: FC<PageProps> = (props) => (
       </ul>
     </nav>
 
-    <h1>Azure certifications</h1>
-    <p>
-      Here, you will be able find and book online training and cloud
-      certifications. The Home Office does not provide cloud training directly.
-      Instead, we have professional training supplied by our cloud providers and
-      training websites. Our cloud providers have engaged with us to
-      provide free training for Home Office staff and contractors. So, we need
-      to make sure we are taking advantage of this opportunity.
-    </p>
+    <main className="govuk-grid-column-three-quarters">
+      <h1>
+        <span className="caption">Azure training</span>
+        Azure certifications
+      </h1>
+      <p>
+        Azure Training is undertaken through the Microsoft{" "}
+        <a href="https://esi.microsoft.com/">
+          Enterprise Skills Initiative (ESI)
+        </a>
+        . The links below show a summary of some of the different certification
+        levels.
+      </p>
 
-    <h2>Types of training available</h2>
-    <h3>Cloud providers training </h3>
-    <p>
-      Our cloud providers offer free e-learning which is available to everybody.
-      There is also instructor-led training, which is initially prioritised for
-      Home Office employees, but is also available to contractors. For more
-      information on training visit the AWS and Azure training pages.
-    </p>
+      <p>
+        For any further information on how to book these courses listed please
+        email:{" "}
+        <a href="mailto:public.cloud@homeoffice.gov.uk">
+          public.cloud@homeoffice.gov.uk
+        </a>
+      </p>
 
-    <h3>Cloud academy</h3>
-    <p>
-      For cloud academy’s e-learning platform visit{" "}
-      <a href="https://cloudacademy.com" className="govuk-link">
-        cloudacademy.com
-      </a>{" "}
-      and sign up for a free trial. If you found the free trial useful you can
-      email{" "}
-      <a href="mailto:public.cloud@homeoffice.gov.uk">
-        public.cloud@homeoffice.gov.uk
-      </a>{" "}
-      to get access to a Home Office account.
-    </p>
+      <details className="govuk-details">
+        <summary className="govuk-details__summary">Azure Fundamentals</summary>
+        <div className="govuk-details__text">
+          <p>
+            The Azure Fundamental certification is aimed at everybody who wishes
+            to increase their knowledge of Azure. The free online training
+            starts with the very basics, allowing total novices to begin their
+            Azure journey. The first training path explains 'what is cloud
+            computing'. The training can be useful to check your own knowledge
+            and can be taken at your speed.
+          </p>
+          <p>The Azure Fundamentals training includes:</p>
+          <ul>
+            <li>Understanding cloud concepts,</li>
+            <li>Core Azure Services,</li>
+            <li>Azure pricing and support,</li>
+            <li>
+              Fundamentals of cloud security, privacy, compliance, and trust.
+            </li>
+          </ul>
+          <p>
+            Delivery: Microsoft Learn (free on-line, self-paced) or
+            virtual/in-person instructor led training delivered by Microsoft.
+          </p>
+          <p>
+            Duration: 1 Day, although the free courses can be down at any time
+            and at own pace.
+          </p>
+          <p>
+            You may also be interested in{" "}
+            <a href="https://docs.microsoft.com/en-gb/learn/paths/az-900-describe-cloud-concepts/">
+              free online training for Azure Fundamentals
+            </a>
+            .
+          </p>
+          <p>
+            If you would like to book onto a face-to-face course or book an
+            exam, please email:
+            <a href="mailto:public.cloud@homeoffice.gov.uk">
+              public.cloud@homeoffice.gov.uk
+            </a>
+          </p>
+        </div>
+      </details>
+
+      <details className="govuk-details">
+        <summary className="govuk-details__summary">
+          Architect Certification
+        </summary>
+        <div className="govuk-details__text">
+          <p>
+            The Architect Certification was developed for individuals who have
+            intermediate-level skills for administering Azure.
+          </p>
+          <p>This Azure Training is aimed at people who are:</p>
+          <ul>
+            <li>Architects on existing teams using Azure,</li>
+            <li>
+              Responsible for reviewing cloud hosting architecture on a
+              Technical Design Authority Board,
+            </li>
+            <li>Understand Azure development and DevOps processes,</li>
+            <li>
+              Already have some expertise or are willing to learn – Expert: 3-5
+              years recommended experience.
+            </li>
+          </ul>
+          <p>
+            You may also wish to visit Microsoft’s website for more information
+            on their{" "}
+            <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/">
+              Azure architect certification
+            </a>
+            .
+          </p>
+          <p>
+            If you would like to book onto a face-to-face course or book an
+            exam, please email:
+            <a href="mailto:public.cloud@homeoffice.gov.uk">
+              public.cloud@homeoffice.gov.uk
+            </a>
+          </p>
+        </div>
+      </details>
+
+      <details className="govuk-details">
+        <summary className="govuk-details__summary">
+          Developer Certification
+        </summary>
+        <div className="govuk-details__text">
+          <p>
+            The Developer Certification is designed for participants who have
+            subject matter expertise designing, building, testing, and
+            maintaining cloud applications and services on Microsoft Azure.
+          </p>
+          <p>This Azure Training is aimed at people who are:</p>
+          <ul>
+            <li>Already working on a team that is using Azure,</li>
+            <li>
+              For people interested in, transitioning to or already in the
+              specific job role,
+            </li>
+            <li>
+              Already have some expertise or are willing to learn – Associate: 2
+              years recommended experience.
+            </li>
+          </ul>
+          <p>
+            You may also wish to visit Microsoft’s website for more information
+            on their{" "}
+            <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-developer/">
+              Azure developer certification
+            </a>
+            .
+          </p>
+          <p>
+            If you would like to book onto a face-to-face course or book an
+            exam, please email:
+            <a href="mailto:public.cloud@homeoffice.gov.uk">
+              public.cloud@homeoffice.gov.uk
+            </a>
+          </p>
+        </div>
+      </details>
+    </main>
   </Fragment>
 );
 

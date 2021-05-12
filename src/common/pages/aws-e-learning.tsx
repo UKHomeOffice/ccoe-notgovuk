@@ -3,8 +3,8 @@ import { PageProps } from "@not-govuk/app-composer";
 
 const Page: FC<PageProps> = (props) => (
   <Fragment>
-    <h4 className="app-subnav__theme">AWS training</h4>
-    <nav className="not-govuk-navigation-menu">
+    <nav className="not-govuk-navigation-menu govuk-grid-column-one-quarter">
+      <h4 className="app-subnav__theme">AWS training</h4>
       <ul className="not-govuk-navigation-menu__list">
         <li className="not-govuk-navigation-menu__list__item not-govuk-navigation-menu__list__item--active">
           <a
@@ -34,10 +34,7 @@ const Page: FC<PageProps> = (props) => (
           </a>
         </li>
       </ul>
-    </nav>
-
-    <h4 className="app-subnav__theme">Azure training</h4>
-    <nav className="not-govuk-navigation-menu">
+      <h4 className="app-subnav__theme">Azure training</h4>
       <ul className="not-govuk-navigation-menu__list">
         <li className="not-govuk-navigation-menu__list__item">
           <a
@@ -78,20 +75,22 @@ const Page: FC<PageProps> = (props) => (
       </ul>
     </nav>
 
-    <h1>
-      <span className="caption">AWS training</span>
-      AWS E-Learning
-    </h1>
-    <p className="govuk-body">
-      Explore{" "}
-      <a href="https://www.aws.training/Dashboard/?cta=tctopbanner">
-        AWS online training
-      </a>{" "}
-      for all e-learning where you can complete courses at your own pace. To
-      sign up to AWS E-Learning training you need to have an AWS account. You
-      can use your Home Office account or create a personal account to complete
-      the training and track your progress.
-    </p>
+    <main className="govuk-grid-column-three-quarters">
+      <h1>
+        <span className="caption">AWS training</span>
+        AWS E-Learning
+      </h1>
+      <p className="govuk-body">
+        Explore{" "}
+        <a href="https://www.aws.training/Dashboard/?cta=tctopbanner">
+          AWS online training
+        </a>{" "}
+        for all e-learning where you can complete courses at your own pace. To
+        sign up to AWS E-Learning training you need to have an AWS account. You
+        can use your Home Office account or create a personal account to
+        complete the training and track your progress.
+      </p>
+    </main>
   </Fragment>
 );
 

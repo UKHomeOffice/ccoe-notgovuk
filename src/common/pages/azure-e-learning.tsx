@@ -3,8 +3,8 @@ import { PageProps } from "@not-govuk/app-composer";
 
 const Page: FC<PageProps> = (props) => (
   <Fragment>
-    <h4 className="app-subnav__theme">AWS training</h4>
-    <nav className="not-govuk-navigation-menu">
+    <nav className="not-govuk-navigation-menu govuk-grid-column-one-quarter">
+      <h4 className="app-subnav__theme">AWS training</h4>
       <ul className="not-govuk-navigation-menu__list">
         <li className="not-govuk-navigation-menu__list__item">
           <a
@@ -34,10 +34,7 @@ const Page: FC<PageProps> = (props) => (
           </a>
         </li>
       </ul>
-    </nav>
-
-    <h4 className="app-subnav__theme">Azure training</h4>
-    <nav className="not-govuk-navigation-menu">
+      <h4 className="app-subnav__theme">Azure training</h4>
       <ul className="not-govuk-navigation-menu__list">
         <li className="not-govuk-navigation-menu__list__item">
           <a
@@ -78,38 +75,42 @@ const Page: FC<PageProps> = (props) => (
       </ul>
     </nav>
 
-    <h1>Azure E-Learning</h1>
-    <p>
-      Here, you will be able find and book online training and cloud
-      certifications. The Home Office does not provide cloud training directly.
-      Instead, we have professional training supplied by our cloud providers and
-      training websites. Our cloud providers have engaged with us to
-      provide free training for Home Office staff and contractors. So, we need
-      to make sure we are taking advantage of this opportunity.
-    </p>
+    <main className="govuk-grid-column-three-quarters">
+      <h1>
+        <span className="caption">Azure training</span>
+        Azure E-Learning
+      </h1>
+      <p>
+        To support your Azure training, we are working with Microsoft. We are
+        using the Microsoft{" "}
+        <a href="https://esi.microsoft.com/">
+          Enterprise Skills Initiative (ESI)
+        </a>
+        . As part of this package, Microsoft have also rolled out the Learning
+        Experience Portal (LxP). Within this portal is free resources, learning
+        and accreditation provided by Microsoft. You will need to sign into the
+        ESI with your work email to view all the available material.
+      </p>
 
-    <h2>Types of training available</h2>
-    <h3>Cloud providers training </h3>
-    <p>
-      Our cloud providers offer free e-learning which is available to everybody.
-      There is also instructor-led training, which is initially prioritised for
-      Home Office employees, but is also available to contractors. For more
-      information on training visit the AWS and Azure training pages.
-    </p>
+      <p>
+        You may also wish to visit Microsoft’s website for all{" "}
+        <a href="https://docs.microsoft.com/en-gb/learn/browse/">
+          Azure training
+        </a>{" "}
+        material. This is not part of ESI, but you are able to create a personal
+        account if you like.
+      </p>
 
-    <h3>Cloud academy</h3>
-    <p>
-      For cloud academy’s e-learning platform visit{" "}
-      <a href="https://cloudacademy.com" className="govuk-link">
-        cloudacademy.com
-      </a>{" "}
-      and sign up for a free trial. If you found the free trial useful you can
-      email{" "}
-      <a href="mailto:public.cloud@homeoffice.gov.uk">
-        public.cloud@homeoffice.gov.uk
-      </a>{" "}
-      to get access to a Home Office account.
-    </p>
+      <p>
+        To help understand what training you should undertake you can complete
+        an Azure skills assessment for your role. Do this on{" "}
+        <a href="https://www.pluralsight.com/partners/microsoft/azure?aid=7010a000001xDURAA2">
+          Pluralsight
+        </a>
+        , you do not need a Home Office licence to access these skills
+        assessments.
+      </p>
+    </main>
   </Fragment>
 );
 
