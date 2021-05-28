@@ -1,78 +1,48 @@
 import { FC, Fragment, createElement as h } from "react";
 import { PageProps } from "@not-govuk/app-composer";
+import { NavigationMenu } from "@not-govuk/components";
 
 const Page: FC<PageProps> = (props) => (
   <Fragment>
     <nav className="not-govuk-navigation-menu govuk-grid-column-one-quarter">
       <h4 className="app-subnav__theme">AWS training</h4>
-      <ul className="not-govuk-navigation-menu__list">
-        <li className="not-govuk-navigation-menu__list__item">
-          <a
-            aria-current="page"
-            className="not-govuk-navigation-menu__list__link active"
-            href="aws-e-learning"
-          >
-            AWS E-Learning
-          </a>
-        </li>
-        <li className="not-govuk-navigation-menu__list__item">
-          <a
-            aria-current="page"
-            className="not-govuk-navigation-menu__list__link active"
-            href="upcoming-aws-courses"
-          >
-            Upcoming AWS courses
-          </a>
-        </li>
-        <li className="not-govuk-navigation-menu__list__item">
-          <a
-            aria-current="page"
-            className="not-govuk-navigation-menu__list__link active"
-            href="aws-certifications"
-          >
-            AWS certifications
-          </a>
-        </li>
-      </ul>
+      <NavigationMenu
+        items={[
+          {
+            href: "aws-e-learning",
+            text: "AWS E-Learning",
+          },
+          {
+            href: "upcoming-aws-courses",
+            text: "Upcoming AWS courses",
+          },
+          {
+            href: "aws-certifications",
+            text: "AWS certifications",
+          },
+        ]}
+      />
       <h4 className="app-subnav__theme">Azure training</h4>
-      <ul className="not-govuk-navigation-menu__list">
-        <li className="not-govuk-navigation-menu__list__item not-govuk-navigation-menu__list__item--active">
-          <a
-            aria-current="page"
-            className="not-govuk-navigation-menu__list__link active"
-            href="azure-learning-pathways"
-          >
-            Azure learning pathways
-          </a>
-        </li>
-        <li className="not-govuk-navigation-menu__list__item">
-          <a
-            aria-current="page"
-            className="not-govuk-navigation-menu__list__link active"
-            href="azure-e-learning"
-          >
-            Azure E-Learning
-          </a>
-        </li>
-        <li className="not-govuk-navigation-menu__list__item">
-          <a
-            aria-current="page"
-            className="not-govuk-navigation-menu__list__link active"
-            href="upcoming-azure-courses"
-          >
-            Upcoming Azure courses
-          </a>
-        </li>
-        <li className="not-govuk-navigation-menu__list__item">
-          <a
-            aria-current="page"
-            className="not-govuk-navigation-menu__list__link active"
-            href="azure-certifications"
-          >
-            Azure certifications
-          </a>
-        </li>
-      </ul>
+      <NavigationMenu
+        items={[
+          {
+            href: "azure-learning-pathways",
+            text: "Azure learning pathways",
+          },
+          {
+            href: "azure-e-learning",
+            text: "Azure E-Learning",
+          },
+          {
+            href: "upcoming-azure-courses",
+            text: "Upcoming Azure courses",
+          },
+          {
+            href: "azure-certifications",
+            text: "Azure certifications",
+          },
+        ]}
+      />
     </nav>
 
     <main className="govuk-grid-column-three-quarters">
